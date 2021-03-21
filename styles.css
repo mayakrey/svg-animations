@@ -62,8 +62,8 @@ h1 {
 }
 
 .btn-container:hover .btn-shape {
-    -webkit-animation: 1.1s fillButton forwards;
-    animation: 1.1s fillButton forwards;
+    -webkit-animation: fillButton 1.1s forwards;
+    animation: fillButton 1.1s forwards;
 }
 
 #loading-spinner {
