@@ -1,2 +1,4 @@
-# svg-animations
-SVG animations
+# SVG Animations
+
+https://mayakrey.github.io/svg-animations/
+
