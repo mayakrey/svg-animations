@@ -18,7 +18,7 @@ h1 {
     margin: 0 auto;
 }
 
-.grid-item div {
+.grid-item > div {
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 3px 4px 8px #8e8e8e;
@@ -37,11 +37,53 @@ h1 {
 #icon path {
     stroke-dashoffset: 210;
     stroke-dasharray: 210;
-    animation: draw 13s forwards;
+    animation: drawLine 13s forwards;
 }
 
-@keyframes draw {
+.grid-item .container-width {
+    padding: 60px 33px 60px 33px;
+}
+
+.btn-container {
+    cursor: pointer;
+}
+
+.btn-container,
+.btn-container svg {
+    width: 200px;
+    height: 50px;
+}
+
+.btn-text {
+    color: #fff;
+    font-size: 22px;
+    top: -48px;
+    left: 75px;
+    position: relative;
+}
+
+.btn-shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+}
+
+.btn-container:hover .btn-shape {
+    -webkit-animation: 1.1s fillButton forwards;
+    animation: 1.1s fillButton forwards;
+}
+
+@keyframes drawLine {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillButton {
+    0% {
+        fill: rgb(39, 34, 34);
+        transform: translate(0,-100%);
+    }
+    100% {
+        fill: #000;
     }
 }
