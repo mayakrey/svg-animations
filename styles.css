@@ -1,0 +1,47 @@
+body {
+    background-color: #e3dae8;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid {
+    column-gap: 25px;
+    flex-direction: column;
+    row-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid-item div {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 3px 4px 8px #8e8e8e;
+    padding: 8px;
+}
+
+.grid-item p {
+    font-size: 18px;
+}
+
+#icon {
+    width: 250px;
+    height: 250px;
+}
+
+#icon path {
+    stroke-dashoffset: 210;
+    stroke-dasharray: 210;
+    animation: draw 13s forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
