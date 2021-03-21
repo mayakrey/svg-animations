@@ -14,7 +14,7 @@
     <div class="grid-item">
         <p>draw line on load</p>
         <div>
-            <svg viewBox="-2 -2 20 20" xmlns="http://www.w3.org/2000/svg" id="icon">
+            <svg viewBox="-2 -2 20 20" xmlns="http://www.w3.org/2000/svg" id="icon" width="250" height="250">
                 <path d="M1 14 4.29526007 2 8 9 11.1330196 2 15 14 1 14"
                       stroke="#00B98C" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
             </svg>
@@ -24,11 +24,25 @@
         <p>fill button on hover</p>
         <div class="container-width">
             <div class="btn-container">
-                <svg xmlns="http://www.w3.org/2000/svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="50">
                     <rect class="btn-shape" width="200" height="50"/>
                 </svg>
                 <span class="btn-text">hover</span>
             </div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <p>loading spinner</p>
+        <div>
+            <svg width="250" height="250" id="loading-spinner">
+                <linearGradient id="spinner" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="5%" stop-color="#FFFFFF" stop-opacity="0"></stop>
+                    <stop offset="35%" stop-color="#FEF000" stop-opacity="0.3"></stop>
+                    <stop offset="40%" stop-color="#FEF013" stop-opacity="0.5"></stop>
+                    <stop offset="100%" stop-color="#FF7E00" stop-opacity="1"></stop>
+                </linearGradient>
+                <circle r="30" cx="125" cy="125" stroke-width="4" fill="none" stroke="url(#spinner)"></circle>
+            </svg>
         </div>
     </div>
 </div>
