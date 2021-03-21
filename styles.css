@@ -8,17 +8,17 @@ h1 {
 }
 
 .grid {
+    grid-template-columns: 37%;
+    display: grid;
     column-gap: 25px;
-    flex-direction: column;
     row-gap: 20px;
-    display: flex;
-    align-items: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
 }
 
 .grid-item > div {
+    text-align: center;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 3px 4px 8px #8e8e8e;
@@ -36,7 +36,7 @@ h1 {
 }
 
 .grid-item .container-width {
-    padding: 60px 33px 60px 33px;
+    padding: 60px 33px 60px 90px;
 }
 
 .btn-container {
@@ -52,7 +52,7 @@ h1 {
     color: #fff;
     font-size: 22px;
     top: -48px;
-    left: 75px;
+    left: 5px;
     position: relative;
 }
 
